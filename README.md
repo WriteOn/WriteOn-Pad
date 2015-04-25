@@ -18,13 +18,13 @@ Welcome to WriteOn. We're on a mission to create the world's finest writing expe
 #### 1.1 init with id attribute
 
 ```js
-var editor = new Pen('#editor');
+var editor = new Pad('#editor');
 ```
 
 #### 1.2 init with an element
 
 ```js
-var editor = new Pen(document.getElementById('editor'));
+var editor = new Pad(document.getElementById('editor'));
 ```
 
 #### 1.3 init with options
@@ -32,22 +32,22 @@ var editor = new Pen(document.getElementById('editor'));
 ```js
 var options = {
   editor: document.body, // {DOM Element} [required]
-  class: 'pen', // {String} class of the editor,
+  class: 'pad', // {String} class of the editor,
   debug: false, // {Boolean} false by default
   textarea: '<textarea name="content"></textarea>', // fallback for old browsers
   list: ['bold', 'italic', 'underline'] // editor menu list
 }
 
-var editor = new Pen(options);
+var editor = new Pad(options);
 ```
 
 ## 2. configure
 
-The following object sets up the default settings of Pen:
+The following object sets up the default settings of Pad:
 
 ```js
 defaults = {
-  class: 'pen',
+  class: 'pad',
   debug: false,
   textarea: '<textarea name="content"></textarea>',
   list: [
@@ -58,7 +58,7 @@ defaults = {
 }
 ```
 
-If you want to customize the toolbar to fit your own project, you can instanciate `Pen` constructor with an `options` object like [#1.3: init with options](https://github.com/sofish/pen#13-init-with-options):
+If you want to customize the toolbar to fit your own project, you can instanciate `Pad` constructor with an `options` object like [#1.3: init with options](https://github.com/BeardandFedora/WritOn-Pad#13-init-with-options):
 
 #### 2.1 Fallback for old browser
 
@@ -66,11 +66,11 @@ You can set `defaults.textarea` to a piece of HTML string, by default, it's `<te
 
 #### 2.2 Change the editor class
 
-Pen will add `.pen` to your editor by default, if you want to change the class, make sure to replace the class name `pen` to your own in `src/pen.css`.
+Pad will add `.pad` to your editor by default, if you want to change the class, make sure to replace the class name `pad` to your own in `src/pad.css`.
 
 #### 2.3 Enable debug mode
 
-If `options.debug` is set to `true`, Pen will output logs to the Console of your browser.
+If `options.debug` is set to `true`, Pad will output logs to the Console of your browser.
 
 ![debugger](https://f.cloud.github.com/assets/153183/1078426/e1d40758-1527-11e3-9a68-12c58225c93c.png)
 
@@ -91,33 +91,33 @@ You can set `options.list` to an `Array`, add the following strings to make your
 
 #### 2.5 Prevent unsafe page redirect
 
-By default, Pen will prevent unsafe page redirect when editing, to shut down it, specific `options.stay` to `false`.
+By default, Pad will prevent unsafe page redirect when editing, to shut down it, specific `options.stay` to `false`.
 
 __NOTE:__ if `defaults.debug` is set to `true` and `default.stay` is not set: `defaults.stay == !defaults.debug`.
 
 #### 2.6 Disable and Re-enable editor
 
-You can disable the pen editor by call `destroy()` method of the `var pen = new Pen(options)` object. like:
+You can disable the pad editor by call `destroy()` method of the `var pad = new Pad(options)` object. like:
 
 ```js
-var pen = new Pen('#editor');
+var pad = new Pad('#editor');
 
-pen.destroy(); // return itself
+pad.destroy(); // return itself
 ```
 
 And, there's a corresponding method called `rebuild()` to re-enable the editor:
 
 ```js
-pen.rebuild(); // return itself
+pad.rebuild(); // return itself
 ```
 
 ## 3. markdown syntax support
 
 #### 3.1 install
-The syntax convertor will be enabled automatically by linking `markdown.js` after `pen.js: 
+The syntax convertor will be enabled automatically by linking `markdown.js` after `pad.js: 
 
 ```html
-<script src="src/pen.js"></script>
+<script src="src/pad.js"></script>
 <script src="src/markdown.js"></script>
 ```
 

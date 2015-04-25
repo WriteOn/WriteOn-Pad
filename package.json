@@ -1,6 +1,6 @@
 {
   "name": "WriteOn-Pad",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "src/pad.js",
   "author": "WriteOn <team@writeon.io>",
   "description": "Enjoy live editing (+markdown) in WriteOn",
