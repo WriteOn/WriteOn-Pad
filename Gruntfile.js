@@ -16,22 +16,33 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         src: 'src/**/*.js',
-        dest: 'build/pen-<%= pkg.version %>.min.js'
+        dest: 'build/pad-<%= pkg.version %>.min.js'
       }
     },
 
     watch: {
       files: ['<%= jshint.files %>'],
       tasks: ['jshint']
-    }
+    },
+
+    cssmin: {
+      target: {
+        files: [{
+          'build/pad-<%= pkg.version %>.min.css': ['src/**/*.css']
+        }]
+      }
+    },
+    clean: ["build/*"]
   });
 
   // Plugins
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default task(s).
-  grunt.registerTask('default', ['jshint', 'uglify']);
+  grunt.registerTask('default', ['clean', 'jshint', 'uglify', 'cssmin']);
 
 };

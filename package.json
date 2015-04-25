@@ -1,7 +1,7 @@
 {
   "name": "WriteOn-Pad",
   "version": "0.0.3",
-  "main": "src/pad.js",
+  "main": "build/pad.js",
   "author": "WriteOn <team@writeon.io>",
   "description": "Enjoy live editing (+markdown) in WriteOn",
   "repository": {
@@ -26,5 +26,10 @@
   "scripts": {
     "test": "grunt --verbose"
   },
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.12.2"
+  }
 }

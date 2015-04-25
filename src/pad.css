@@ -3,8 +3,7 @@
 .pad, .pad-menu, .pad-input, .pad textarea{font:400 1.16em/1.45 Palatino, Optima, Georgia, serif;color:#331;}
 .pad:focus{outline:none;}
 .pad fieldset, img {border: 0;}
-.pad blockquote{padding-left:10px;margin-left:-14px;border-left:4px solid #1abf89;}
-.pad a{color:#1abf89;}
+.pad blockquote{padding-left:10px;margin-left:-14px;border-left:4px solid #0a6ebd;}
 .pad del{text-decoration:line-through;}
 .pad sub, .pad sup {font-size:75%;position:relative;vertical-align:text-top;}
 :root .pad sub, :root .pad sup{vertical-align:baseline; /* for ie9 and other mordern browsers */}
@@ -40,20 +39,20 @@
 }
 .pad-menu { min-width: 320px; }
 .pad-menu, .pad-input{font-size:14px;line-height:1;}
-.pad-menu{white-space:nowrap;box-shadow:1px 2px 3px -2px #222;background:#333;background-image:linear-gradient(to bottom, #222, #333);opacity:0.9;position:fixed;height:36px;border:1px solid #333;border-radius:3px;display:none;z-index:1000;}
+.pad-menu{white-space:nowrap;box-shadow:1px 2px 3px -2px #222;background:#333;background-image:linear-gradient(to bottom, #222, #333);opacity:0.9;position:fixed;height:45px;border-radius:3px;display:none;z-index:1000;}
 .pad-menu:after {top:100%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;}
 .pad-menu:after {border-color:rgba(51, 51, 51, 0);border-top-color:#333;border-width:6px;left:50%;margin-left:-6px;}
 .pad-menu-below:after {top: -11px; display:block; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg);}
-.pad-icon{font:normal 900 16px/40px Georgia serif;min-width:20px;display:inline-block;padding:0 10px;height:36px;overflow:hidden;color:#fff;text-align:center;cursor:pointer;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;}
+.pad-icon{font:normal 900 16px/40px Georgia serif;min-width:20px;display:inline-block;padding:0 10px;height:45px;overflow:hidden;color:#fff;text-align:center;cursor:pointer;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;}
 .pad-icon:first-of-type{border-top-left-radius:3px;border-bottom-left-radius:3px;}
 .pad-icon:last-of-type{border-top-right-radius:3px;border-bottom-right-radius:3px;}
-.pad-icon:hover{background:#000;}
-.pad-icon.active{color:#1abf89;background:#000;box-shadow:inset 2px 2px 4px #000;}
-.pad-input{position:absolute;width:100%;left:0;top:0;height:36px;line-height:20px;background:#333;color:#fff;border:none;text-align:center;display:none;font-family:arial, sans-serif;}
+.pad-icon:hover{background:#000;color: #0a6ebd;}
+.pad-icon.active{color: #fff; background:#0a6ebd;box-shadow:inset 2px 2px 4px #0c7cd5;}
+.pad-input{position:absolute;width:100%;left:0;top:0;height:45px;line-height:20px;background:#333;color:#fff;border:none;text-align:center;display:none;font-family:arial, sans-serif;}
 .pad-input:focus{outline:none;}
 
 .pad-textarea{display:block;background:#f8f8f8;padding:20px;}
-.pad textarea{font-size:14px;border:none;background:none;width:100%;_height:200px;min-height:200px;resize:none;}
+.pad textarea{font-size:14px;border:none;background:none;width:100%;height:200px;min-height:200px;resize:none;}
 
 @font-face {
     font-family: 'pad';
@@ -80,6 +79,7 @@
   text-transform: none;
   line-height: 1em;
   margin-left: .2em;
+	margin-top: 14px;
 }
 .pad-menu .icon-location:before { content: '\e815'; } /* '' */
 .pad-menu .icon-fit:before { content: '\e80f'; } /* '' */
@@ -114,7 +114,7 @@
 .pad-menu .icon-h5:before { content: 'H5'; }
 .pad-menu .icon-h6:before { content: 'H6'; }
 .pad-menu .icon-p:before { content: 'P'; }
-.pad-menu .icon-insertimage:before { width:1.8em;margin:0;position:relative;top:-2px;content:'IMG';font-size:12px;border:1px solid #fff;padding:2px;border-radius:2px; }
+.pad-menu .icon-insertimage:before { width:2.3em;margin:0;position:relative;content:'IMG';font-size:12px;border:1px solid #fff;padding:2px;border-radius:2px; }
 .pad {
   position: relative;
 }
@@ -134,7 +134,7 @@
 }
 .pad.hinted blockquote {  border-left: 0; margin-left: 0; padding-left: 0; }
 .pad.hinted blockquote:before {
-  color: #1abf89;
+  color: #0a6ebd;
   content: ">";
   font-weight: bold;
   vertical-align: center;
