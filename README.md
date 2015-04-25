@@ -8,7 +8,7 @@ Welcome to WriteOn. We're on a mission to create the world's finest writing expe
 
 ******************
 
-![WriteOn Pad - screenshot ](https://f.cloud.github.com/assets/153183/1093671/61d4c0d2-16a9-11e3-88ed-01b1758a9a42.png)
+![WriteOn Pad - screenshot ](screenshot.png)
 
 ******************
 
@@ -71,8 +71,6 @@ Pad will add `.pad` to your editor by default, if you want to change the class, 
 #### 2.3 Enable debug mode
 
 If `options.debug` is set to `true`, Pad will output logs to the Console of your browser.
-
-![debugger](https://f.cloud.github.com/assets/153183/1078426/e1d40758-1527-11e3-9a68-12c58225c93c.png)
 
 #### 2.4 Customize the toolbar
 
@@ -140,7 +138,3 @@ The following cmds are allowed:
 ## 4. license
 
 Licensed under MIT.
-
-## 5. trusted by *
-
-[![Teambition](https://dn-project-site.qbox.me/images/logo.png)](https://github.com/teambition)
